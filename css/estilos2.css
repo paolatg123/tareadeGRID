@@ -1,0 +1,110 @@
+.contenedor
+
+/*padre*/
+    {
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    font-size: 25px;
+    display: grid;
+    grid-gap: 10px;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 7fr 1fr;
+    grid-template-areas: "cabecera   cabecera    cabecera"
+        "menu    menu   menu"
+        "contenido  contenido publi"
+        "pie    pie pie"
+    ;
+    text-align: center;
+}
+
+.contenedor>div {
+    background-color: blueviolet;
+    text-align: center;
+
+}
+
+.contenedor .cabecera {
+    background-color: orange;
+    grid-column: cabecera;
+    /*nombre de la clase*/
+}
+
+.contenedor .menu {
+    background-color: yellow;
+    grid-column: menu;
+}
+
+.contenedor .contenido {
+    background-color: gray;
+    grid-column: contenido;
+}
+
+.contenedor .publi {
+    background-color: red;
+    grid-column: publi;
+    
+}
+
+.contenedor .pie {
+    background-color: burlywood;
+    grid-column: pie;
+}
+
+.contenido .texto1 {
+    width: 350px;
+    height: 150px;
+
+    background-color: pink;
+    position: relative;
+    left: 60px;
+    top: 30px;
+    float: left;
+
+
+
+}
+
+.contenido .texto2 {
+    width: 350px;
+    height: 150px;
+    background-color: pink;
+    position: relative;
+    top: 30px;
+    right: 60px;
+    float: right;
+    
+
+
+
+
+
+}
+
+.publi .publi1 {
+    width: 250px;
+    height: 80px;
+position: relative;
+    border: 7px solid orange;
+   left: 100px;
+   bottom: 10px;
+   top: 10px;
+   
+   
+   
+
+}
+
+.publi .publi2 {
+    width: 250px;
+    height: 40px;
+    position: relative;
+    border: 7px solid green;
+    left: 100px;
+    top: 10px;
+
+   
+
+
+}
